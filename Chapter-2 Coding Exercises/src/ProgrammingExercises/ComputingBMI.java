@@ -12,22 +12,23 @@ import java.util.Scanner;
  * @author Justin
  */
 public class ComputingBMI {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        
-        System.out.print("Enter weight in pounds: ");
-        double weightInPounds = input.nextDouble();
-        
-        System.out.print("Enter the height in inches: ");
-        double heightInInches = input.nextDouble();
-        
-        double weightInKilos = weightInPounds * 0.45359237;
-        double heightInMeters = heightInInches * 0.0254;
-        
-        double bmi = (weightInKilos) / (Math.pow(heightInMeters, 2));
-        
-        System.out.println("BMI is " + bmi);
-        
-        input.close();
-    }
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		System.out.print("Enter weight in pounds: ");
+		double weightInPounds = input.nextDouble();
+
+		System.out.print("Enter the height in inches: ");
+		double heightInInches = input.nextDouble();
+
+		double weightInKilos = weightInPounds * 0.45359237;
+		double heightInMeters = heightInInches * 0.0254;
+
+		double bmi = (weightInKilos) / (Math.pow(heightInMeters, 2));
+
+		System.out.println("BMI is " + bmi);
+
+		input.close();
+	}
 }

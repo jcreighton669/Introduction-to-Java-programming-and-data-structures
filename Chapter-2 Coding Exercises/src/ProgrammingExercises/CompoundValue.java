@@ -12,16 +12,17 @@ import java.util.Scanner;
  * @author Justin
  */
 public class CompoundValue {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        
-        System.out.print("Enter the monthly saving amount: ");
-        double monthlyInvestment = input.nextDouble();
-        
-        double balance = monthlyInvestment * (1 + 0.003125);
-        
-        System.out.println("balance: " + balance);
-        
-        input.close();
-    }
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		System.out.print("Enter the monthly saving amount: ");
+		double monthlyInvestment = input.nextDouble();
+
+		double balance = monthlyInvestment * (1 + 0.003125);
+
+		System.out.println("balance: " + balance);
+
+		input.close();
+	}
 }
