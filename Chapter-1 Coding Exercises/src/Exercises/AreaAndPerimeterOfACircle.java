@@ -10,13 +10,14 @@ package Exercises;
  * @author Justin
  */
 public class AreaAndPerimeterOfACircle {
-    public static void main(String[] args) {
-        double radius = 6.5;
-        double pi = 3.14159;
-        double perimeter = 2 * pi * radius;
-        double area = pi * Math.pow(radius, 2);
-        
-        System.out.println("Perimeter: " + perimeter);
-        System.out.println("Area: " + area);
-    }
+
+	public static void main(String[] args) {
+		double radius = 6.5;
+		double pi = 3.14159;
+		double perimeter = 2 * pi * radius;
+		double area = pi * Math.pow(radius, 2);
+
+		System.out.println("Perimeter: " + perimeter);
+		System.out.println("Area: " + area);
+	}
 }

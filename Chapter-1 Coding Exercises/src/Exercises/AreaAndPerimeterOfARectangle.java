@@ -10,13 +10,14 @@ package Exercises;
  * @author Justin
  */
 public class AreaAndPerimeterOfARectangle {
-    public static void main(String[] args) {
-        double width = 5.3;
-        double height = 8.6;
-        double area = width * height;
-        double perimeter = 2 * (height + width);
-        
-        System.out.println("Area: " + area);
-        System.out.println("Perimeter: " + perimeter);
-    }
+
+	public static void main(String[] args) {
+		double width = 5.3;
+		double height = 8.6;
+		double area = width * height;
+		double perimeter = 2 * (height + width);
+
+		System.out.println("Area: " + area);
+		System.out.println("Perimeter: " + perimeter);
+	}
 }
