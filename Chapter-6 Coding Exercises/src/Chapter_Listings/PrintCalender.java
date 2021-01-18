@@ -33,6 +33,11 @@ public class PrintCalender {
 		printMonth(year, month);
 	}
 	
+	/**
+	 * Print the calendar for a month in a year
+	 * @param year
+	 * @param month 
+	 */
 	public static void printMonth(int year, int month) {
 		// Print the headings of the calender
 		printMonthTitle(year, month);
@@ -41,19 +46,31 @@ public class PrintCalender {
 		printMonthBody(year, month);
 	}
 	
+	/**
+	 * Print the month title, e.g., March 2012
+	 * @param year
+	 * @param month 
+	 */
 	public static void printMonthTitle(int year, int month) {
 		System.out.println("	" + getMonthName(month) + " " + year);
 		System.out.println("--------------------------------");
 		System.out.println(" Sun Mon Tue Wed Thu Fri Sat");
 	}
 	
+	/**
+	 * Get the English name for the month
+	 * @param month
+	 * @return 
+	 */
 	public static String getMonthName(int month) {
 		String monthName = "";
 		switch (month) {
 			case 1: monthName = "January"; break;
 			case 2: monthName = "February"; break;
 			case 3: monthName = "March"; break;
-			case 4: monthName = "April"; break;
+			case 4:
+				monthName = "April";
+				break;
 			case 5: monthName = "May"; break;
 			case 6: monthName = "June"; break;
 			case 7: monthName = "July"; break;
@@ -66,6 +83,11 @@ public class PrintCalender {
 		return monthName;
 	}
 	
+	/**
+	 * Print month body
+	 * @param year
+	 * @param month 
+	 */
 	public static void printMonthBody(int year, int month) {
 		// Get start day of the week for the first date in the month
 		int startDay = getStartDay(year, month);
@@ -90,6 +112,12 @@ public class PrintCalender {
 		System.out.println();
 	}
 	
+	/**
+	 * Get the start day of month/1/year
+	 * @param year
+	 * @param month
+	 * @return 
+	 */
 	public static int getStartDay(int year, int month) {
 		final int START_SAY_FOR_JAN_1_1800 = 3;
 		// Get total number of days from 1/1/1800 to month/1/year
@@ -99,6 +127,12 @@ public class PrintCalender {
 		return (totalNumberOfDays + START_SAY_FOR_JAN_1_1800) % 7;
 	}
 	
+	/**
+	 * Get the total number of days since January 1, 1800
+	 * @param year
+	 * @param month
+	 * @return 
+	 */
 	public static int getTotalNumberOfDays(int year, int month) {
 		int total = 0;
 		
@@ -119,18 +153,39 @@ public class PrintCalender {
 		return total;
 	}
 	
+	/**
+	 * Get the number of days in a month
+	 * @param year
+	 * @param month
+	 * @return 
+	 */
 	public static int getNumberOfDaysInMonth(int year, int month) {
-		if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
-			return 31;
-		} else if (month == 4 || month == 6 || month == 9 || month == 11) {
-			return 30;
-		} else if (month == 2) {
-			return isLeapYear(year) ? 29: 28;
-		} else {
-			return 0;  // If month is incorrect
+		switch (month) {
+			case 1:
+			case 3:
+			case 5:
+			case 7:
+			case 8:
+			case 10:
+			case 12:
+				return 31;
+			case 4:
+			case 6:
+			case 9:
+			case 11:
+				return 30;
+			case 2:
+				return isLeapYear(year) ? 29: 28;
+			default:
+				return 0;  // If month is incorrect
 		}
 	}
 	
+	/**
+	 * Determine if it is a leap year
+	 * @param year
+	 * @return 
+	 */
 	public static boolean isLeapYear(int year) {
 		return year % 400 == 0 || (year % 4 == 0  && year % 100 != 0);
 	}
