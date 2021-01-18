@@ -10,9 +10,10 @@ package ProgrammingExercises;
  * @author Justin
  */
 public class FindTheSmallestNCubedLessThan12000 {
+
 	public static void main(String[] args) {
 		int n = 0;
-		
+
 		while (Math.pow(n, 3) < 12000) {
 			n++;
 		}

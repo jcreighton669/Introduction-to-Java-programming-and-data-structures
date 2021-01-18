@@ -12,15 +12,16 @@ import java.util.Scanner;
  * @author Justin
  */
 public class RandomPoint {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        
-        int xMax = 50;
-        int yMax = 150;
-        
-        int x = (int)(Math.random() * xMax);
-        int y = (int)(Math.random() * yMax);
-        
-        System.out.println("(" + x + ", " + y + ")");
-    }
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		int xMax = 50;
+		int yMax = 150;
+
+		int x = (int) (Math.random() * xMax);
+		int y = (int) (Math.random() * yMax);
+
+		System.out.println("(" + x + ", " + y + ")");
+	}
 }
