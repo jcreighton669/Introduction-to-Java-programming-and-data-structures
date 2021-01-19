@@ -42,11 +42,11 @@ public class LoanAmortizationSchedule {
 
 		System.out.println("Payment #\tInterest\tPrincipal\tBalance");
 
-		double balance = totalPayment;
+		double balance = loanAmount;
 		while (paymentNumber <= 12 * numberOfYears) {
 			interestPayment = balance * (annualInterestRate / 1200);
 			principalPayment = monthlyPayment - interestPayment;
-			balance = balance - monthlyPayment;
+			balance = balance - principalPayment;
 
 			System.out.printf(paymentNumber + "\t\t%.2f", interestPayment);
 			System.out.printf("\t\t%.2f", principalPayment);
