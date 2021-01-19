@@ -11,6 +11,11 @@ package Exercises;
  */
 public class AverageSpeedInMiles {
 
+	/**
+	 * Main method
+	 *
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		double miles = 15 * 60 * 1;
 		double hours = 50.5 * 1 * 1.6;

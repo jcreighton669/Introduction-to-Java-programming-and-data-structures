@@ -11,6 +11,11 @@ package Exercises;
  */
 public class PopulationProjection {
 
+	/**
+	 * Main method
+	 *
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		double secondsPerYear = 31536000;
 		double population = 312032486;

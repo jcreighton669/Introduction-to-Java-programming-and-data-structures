@@ -11,6 +11,11 @@ package Exercises;
  */
 public class AreaAndPerimeterOfACircle {
 
+	/**
+	 * Main method
+	 *
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		double radius = 6.5;
 		double pi = 3.14159;

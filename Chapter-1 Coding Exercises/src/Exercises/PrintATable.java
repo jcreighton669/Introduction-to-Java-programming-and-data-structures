@@ -11,6 +11,11 @@ package Exercises;
  */
 public class PrintATable {
 
+	/**
+	 * Main method
+	 *
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		System.out.println("a\ta^2\ta^3\ta^4");
 		for (int i = 1; i < 5; i++) {
