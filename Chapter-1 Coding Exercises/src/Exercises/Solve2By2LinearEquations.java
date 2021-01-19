@@ -25,13 +25,13 @@ public class Solve2By2LinearEquations {
 		double f = 5.9;
 		double x = 0;
 		double y = 0;
-		
+
 		if ((a * d) - (b * c) != 0) {
 			x = ((e * d) - (b * f)) / ((a * d) - (b * c));
 			y = ((a * f) - (e * c)) / ((a * d) - (b * c));
 		}
 		System.out.println("x: " + x);
 		System.out.println("y: " + y);
-		
+
 	}
 }
