@@ -13,6 +13,11 @@ import java.util.Scanner;
  */
 public class MultiplicationQuiz {
 
+	/**
+	 * Main method
+	 *
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		int number1 = (int) (Math.random() * 1000);
 		int number2 = (int) (Math.random() * 1000);

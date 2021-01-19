@@ -11,6 +11,11 @@ package ProgrammingExercises;
  */
 public class RandomMonth {
 
+	/**
+	 * Main method
+	 *
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		int month = (int) (Math.random() * 12 + 1);
 

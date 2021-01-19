@@ -14,6 +14,11 @@ import java.util.Scanner;
  */
 public class HeadsOrTails {
 
+	/**
+	 * Main method
+	 *
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		int result = (int) (Math.random() * 10) % 2;

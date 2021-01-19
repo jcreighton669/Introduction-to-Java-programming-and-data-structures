@@ -13,6 +13,11 @@ import java.util.Scanner;
  */
 public class Lottery {
 
+	/**
+	 * Main method
+	 *
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		// Generate a lottery number
 		int lottery = (int) (Math.random() * 1000);

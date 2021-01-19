@@ -13,6 +13,11 @@ import java.util.Scanner;
  */
 public class DayOfTheWeek {
 
+	/**
+	 * Main method
+	 *
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		String day = "";
