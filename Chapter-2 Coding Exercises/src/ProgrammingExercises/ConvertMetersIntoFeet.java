@@ -13,6 +13,11 @@ import java.util.Scanner;
  */
 public class ConvertMetersIntoFeet {
 
+	/**
+	 * Main method
+	 *
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		final double FOOT_CONVERSION = 3.2786;
 

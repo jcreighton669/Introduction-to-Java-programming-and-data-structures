@@ -13,6 +13,11 @@ import java.util.Scanner;
  */
 public class Acceleration {
 
+	/**
+	 * Main method
+	 *
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter initial velocity, ending velocity, and the time elapsed: ");

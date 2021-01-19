@@ -13,6 +13,11 @@ import java.util.Scanner;
  */
 public class FindingRunwayLength {
 
+	/**
+	 * Main method
+	 *
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
