@@ -40,5 +40,7 @@ public class CheckSSN {
 
 		System.out.println(ssn + " is " + ((isValid) ? "a valid " : "an invalid ")
 				+ "social security number");
+		
+		input.close();
 	}
 }

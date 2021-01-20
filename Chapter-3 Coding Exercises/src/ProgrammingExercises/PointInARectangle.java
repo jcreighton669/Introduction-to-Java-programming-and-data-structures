@@ -31,5 +31,6 @@ public class PointInARectangle {
 			System.out.println("Point (" + x + ", " + y + ") is not in the rectangle");
 		}
 
+		input.close();
 	}
 }

@@ -34,5 +34,7 @@ public class PointInACircle {
 		} else {
 			System.out.println("Point (" + x2 + ", " + y2 + ") is in the circle");
 		}
+		
+		input.close();
 	}
 }

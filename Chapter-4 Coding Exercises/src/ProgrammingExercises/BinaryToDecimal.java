@@ -38,5 +38,7 @@ public class BinaryToDecimal {
 		}
 
 		System.out.println("The decimal value is " + dec_value);
+		
+		input.close();
 	}
 }

@@ -39,5 +39,7 @@ public class TwoCircles {
 		} else {
 			System.out.println("circle2 overlaps circle1");
 		}
+		
+		input.close();
 	}
 }

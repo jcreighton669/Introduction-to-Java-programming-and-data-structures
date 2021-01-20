@@ -40,5 +40,7 @@ public class ComputeThePerimeterOfATraingle {
 		} else {
 			System.out.println("These points do not make a triangle. ");
 		}
+		
+		input.close();
 	}
 }

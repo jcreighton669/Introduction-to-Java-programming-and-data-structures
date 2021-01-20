@@ -40,5 +40,6 @@ public class Solve2By2LinearEquations {
 			System.out.println("The equation has no solution");
 		}
 
+		input.close();
 	}
 }

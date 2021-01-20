@@ -105,5 +105,7 @@ public class GuessBirthday {
 		}
 
 		System.out.println("\nYour birthday is " + day + "!");
+		
+		input.close();
 	}
 }

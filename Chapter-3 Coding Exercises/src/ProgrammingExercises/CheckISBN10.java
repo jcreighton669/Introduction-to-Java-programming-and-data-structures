@@ -43,5 +43,6 @@ public class CheckISBN10 {
 
 		System.out.println(isbn);
 
+		input.close();
 	}
 }

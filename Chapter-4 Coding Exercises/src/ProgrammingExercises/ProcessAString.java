@@ -26,5 +26,6 @@ public class ProcessAString {
 
 		System.out.println("The text was " + text.length() + " characters long and the final character is " + text.charAt(text.length() - 1));
 
+		input.close();
 	}
 }

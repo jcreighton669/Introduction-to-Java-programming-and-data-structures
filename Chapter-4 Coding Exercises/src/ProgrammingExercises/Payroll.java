@@ -62,5 +62,7 @@ public class Payroll {
 		System.out.println("  State Withholding (" + statePercentage + "%): $" + state);
 		System.out.println("  Total Withholding: $" + total);
 		System.out.println("Net pay: $" + net);
+		
+		input.close();
 	}
 }

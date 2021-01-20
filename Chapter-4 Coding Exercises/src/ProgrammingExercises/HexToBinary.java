@@ -85,6 +85,7 @@ public class HexToBinary {
 		} else {
 			System.out.println(ch + " is and invalid input");
 		}
-
+		
+		input.close();
 	}
 }

@@ -34,5 +34,7 @@ public class DisplayPyramid {
 			temp--;
 			System.out.println();
 		}
+		
+		input.close();
 	}
 }

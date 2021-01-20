@@ -36,5 +36,7 @@ public class PointPosition {
 		} else {
 			System.out.println("p2 is on the same line. ");
 		}
+		
+		input.close();
 	}
 }

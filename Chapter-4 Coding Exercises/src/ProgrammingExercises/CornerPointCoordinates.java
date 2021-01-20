@@ -32,5 +32,7 @@ public class CornerPointCoordinates {
 			System.out.printf(", %.2f)", y);
 			System.out.println();
 		}
+		
+		input.close();
 	}
 }

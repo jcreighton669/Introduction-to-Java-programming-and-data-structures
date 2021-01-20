@@ -45,5 +45,7 @@ public class CurrencyExchange {
 			default:
 				System.out.println("Incorrect input");
 		}
+		
+		input.close();
 	}
 }

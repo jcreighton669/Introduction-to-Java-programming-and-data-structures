@@ -33,5 +33,7 @@ public class GreatCircleDistance {
 		double distance = RADIUS * Math.acos(Math.sin(x1) * Math.sin(x2) + Math.cos(x1) * Math.cos(x2) * Math.cos(y1 - y2));
 
 		System.out.println("The distance between the two points is " + distance + " km");
+		
+		input.close();
 	}
 }

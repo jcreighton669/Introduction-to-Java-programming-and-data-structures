@@ -37,5 +37,7 @@ public class CheckISBN10 {
 		int d10 = (d1 * 1 + d2 * 2 + d3 * 3 + d4 * 4 + d5 * 5 + d6 * 6 + d7 * 7 + d8 * 8 + d9 * 9) % 11;
 
 		System.out.println("The ISBN-10 number is " + isbn + ((d10 == 10) ? "X" : d10));
+		
+		input.close();
 	}
 }

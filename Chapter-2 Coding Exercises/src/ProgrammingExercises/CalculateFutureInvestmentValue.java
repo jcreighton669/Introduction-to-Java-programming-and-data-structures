@@ -34,5 +34,7 @@ public class CalculateFutureInvestmentValue {
 		double futureInvestmentAmount = investmentAmount * Math.pow((1 + monthlyInterestRate), (numberOfYears * 12));
 
 		System.out.println("Future value is " + futureInvestmentAmount);
+		
+		input.close();
 	}
 }

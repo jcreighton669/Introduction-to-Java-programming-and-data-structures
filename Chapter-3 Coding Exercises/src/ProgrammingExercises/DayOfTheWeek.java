@@ -60,5 +60,7 @@ public class DayOfTheWeek {
 		}
 
 		System.out.println("Day of the week is " + day);
+		
+		input.close();
 	}
 }

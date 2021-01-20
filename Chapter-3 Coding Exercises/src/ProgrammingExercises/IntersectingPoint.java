@@ -45,5 +45,7 @@ public class IntersectingPoint {
 			double y = (a * f - e * c) / (a * d - b * c);
 			System.out.printf("The intersecting point is at (%.4f, %.4f)", x, y);
 		}
+		
+		input.close();
 	}
 }

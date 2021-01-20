@@ -34,7 +34,9 @@ public class CompareCosts {
 		} else if ((price1 / weight1) > (price2 / weight2)) {
 			System.out.println("Package 1 has a better price.");
 		} else {
-			System.out.println("Tw packages have the same price.");
+			System.out.println("Two packages have the same price.");
 		}
+		
+		input.close();
 	}
 }

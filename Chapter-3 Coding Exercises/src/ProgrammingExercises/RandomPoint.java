@@ -28,5 +28,7 @@ public class RandomPoint {
 		int y = (int) (Math.random() * yMax);
 
 		System.out.println("(" + x + ", " + y + ")");
+		
+		input.close();
 	}
 }

@@ -65,5 +65,7 @@ public class StudentMajorAndStatus {
 		if (!"".equals(major) && !"".equals(status)) {
 			System.out.println(major + " " + status);
 		}
+		
+		input.close();
 	}
 }

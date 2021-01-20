@@ -33,6 +33,8 @@ public class ComputeFutureInvestmentValue {
 			System.out.printf(i + "\t\t$%.2f", futureInvestmentValue(investmentAmount, monthlyInterestRate, i));
 			System.out.println();
 		}
+		
+		input.close();
 	}
 
 	/**

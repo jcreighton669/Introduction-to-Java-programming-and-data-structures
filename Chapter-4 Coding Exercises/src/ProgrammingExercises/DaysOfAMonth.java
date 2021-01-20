@@ -59,5 +59,7 @@ public class DaysOfAMonth {
 		} else {
 			System.out.println(month + " " + year + " has " + days + " days");
 		}
+		
+		input.close();
 	}
 }

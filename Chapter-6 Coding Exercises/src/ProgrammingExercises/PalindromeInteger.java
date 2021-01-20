@@ -28,6 +28,8 @@ public class PalindromeInteger {
 		} else {
 			System.out.println("The number " + number + " is not a palindrome.");
 		}
+		
+		input.close();
 	}
 
 	/**

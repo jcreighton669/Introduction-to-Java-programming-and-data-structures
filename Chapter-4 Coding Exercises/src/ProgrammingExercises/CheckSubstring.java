@@ -32,5 +32,7 @@ public class CheckSubstring {
 		} else {
 			System.out.println(s2 + " is not a substring of " + s1);
 		}
+		
+		input.close();
 	}
 }

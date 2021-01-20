@@ -26,5 +26,7 @@ public class FindTheUnicodeOfACharacter {
 
 		int value = ch;
 		System.out.println("The ASCII code for character " + ch + " is " + value);
+		
+		input.close();
 	}
 }

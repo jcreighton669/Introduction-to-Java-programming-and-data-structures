@@ -29,5 +29,7 @@ public class PointsInTriangle {
 		double intersecty = (-y * (200 * 100)) / (-y * 200 - x * 100);
 
 		System.out.println("The point " + ((x > intersectx || y > intersecty) ? "is not " : "is ") + "in the triangle");
+		
+		input.close();
 	}
 }

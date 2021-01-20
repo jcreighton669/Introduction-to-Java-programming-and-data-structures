@@ -24,6 +24,8 @@ public class SumDigitsInAInteger {
 		long number = input.nextLong();
 
 		System.out.println("The sum of the digits in " + number + " is " + sumDigits(number));
+		
+		input.close();
 	}
 
 	/**

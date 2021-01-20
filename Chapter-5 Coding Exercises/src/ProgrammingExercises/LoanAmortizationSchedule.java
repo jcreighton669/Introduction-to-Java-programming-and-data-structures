@@ -54,5 +54,6 @@ public class LoanAmortizationSchedule {
 			paymentNumber++;
 		}
 
+		input.close();
 	}
 }

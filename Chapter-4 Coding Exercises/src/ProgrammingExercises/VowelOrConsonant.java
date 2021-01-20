@@ -42,5 +42,6 @@ public class VowelOrConsonant {
 			System.out.println(ch + " is an invalid input");
 		}
 
+		input.close();
 	}
 }

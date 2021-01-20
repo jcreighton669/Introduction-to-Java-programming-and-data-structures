@@ -42,5 +42,7 @@ public class CompoundValue {
 
 		double sixthMonth = (fifthMonth + monthlyInvestment) * (1 + MONTHLY_INTEREST_RATE);
 		System.out.println("After the second month, the account value is " + sixthMonth);
+		
+		input.close();
 	}
 }

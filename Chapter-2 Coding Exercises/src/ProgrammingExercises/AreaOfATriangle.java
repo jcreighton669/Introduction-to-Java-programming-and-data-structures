@@ -39,6 +39,7 @@ public class AreaOfATriangle {
 
 		System.out.println("The area of the triangle is " + area);
 
+		input.close();
 	}
 
 	public static double distanceOfTwoPoints(double x1, double y1, double x2, double y2) {

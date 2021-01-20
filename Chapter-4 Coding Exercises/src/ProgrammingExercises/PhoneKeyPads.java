@@ -74,6 +74,7 @@ public class PhoneKeyPads {
 		} else {
 			System.out.println(letter + " is an invalid input");
 		}
-
+		
+		input.close();
 	}
 }

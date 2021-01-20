@@ -31,5 +31,7 @@ public class UseConditionalOperators {
 		System.out.println("Is " + number + " divisible by 4 and 5? " + and);
 		System.out.println("Is " + number + " divisible by 4 or 5? " + or);
 		System.out.println("Is " + number + " divisible by 4 or 5 but not both? " + xor);
+		
+		input.close();
 	}
 }

@@ -44,5 +44,7 @@ public class PointOnLineSegment {
 					+ "(" + x0 + ", " + y0 + ") to (" + x1 + ", " + y1 + ")");
 
 		}
+		
+		input.close();
 	}
 }

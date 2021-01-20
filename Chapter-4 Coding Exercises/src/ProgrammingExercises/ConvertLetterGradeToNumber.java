@@ -48,5 +48,7 @@ public class ConvertLetterGradeToNumber {
 		} else {
 			System.out.println(letterGrade + " is an invalid grade");
 		}
+		
+		input.close();
 	}
 }

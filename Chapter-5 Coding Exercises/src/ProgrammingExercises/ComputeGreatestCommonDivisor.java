@@ -42,5 +42,7 @@ public class ComputeGreatestCommonDivisor {
 		}
 
 		System.out.println("The GCD is " + gcd);
+		
+		input.close();
 	}
 }
