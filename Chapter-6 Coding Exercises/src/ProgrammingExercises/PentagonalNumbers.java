@@ -13,6 +13,7 @@ public class PentagonalNumbers {
 
 	/**
 	 * Main method
+	 *
 	 * @param args
 	 */
 	public static void main(String[] args) {
@@ -26,6 +27,7 @@ public class PentagonalNumbers {
 	}
 
 	/**
+	 * Calculate the pentagonal number from the input
 	 *
 	 * @param n
 	 * @return

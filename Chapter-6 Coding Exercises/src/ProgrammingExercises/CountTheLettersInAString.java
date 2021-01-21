@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author Justin
  */
-public class SumDigitsInAInteger {
+public class CountTheLettersInAString {
 
 	/**
 	 * Main method
@@ -20,28 +20,29 @@ public class SumDigitsInAInteger {
 	 */
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-
-		System.out.print("Enter any integer: ");
-		long number = input.nextLong();
-
-		System.out.println("The sum of the digits in " + number + " is " + sumDigits(number));
-
+		
+		System.out.print("Enter a string: ");
+		String s = input.nextLine();
+		
+		System.out.println("There are " + countLetters(s) + " letters in \n\"" + s + "\"");
+		
 		input.close();
 	}
 
 	/**
+	 * Count the letters in a string of text
 	 *
-	 * @param n
+	 * @param s
 	 * @return
 	 */
-	public static int sumDigits(long n) {
-		int sum = 0;
-		int temp = 0;
-		while (n != 0) {
-			temp = (int) n % 10;
-			sum += temp;
-			n /= 10;
+	public static int countLetters(String s) {
+		int count = 0;
+		for (int i = 0; i < s.length(); i++) {
+			char ch = s.charAt(i);
+			if (Character.isLetter(ch)) {
+				count++;
+			}
 		}
-		return sum;
+		return count;
 	}
 }

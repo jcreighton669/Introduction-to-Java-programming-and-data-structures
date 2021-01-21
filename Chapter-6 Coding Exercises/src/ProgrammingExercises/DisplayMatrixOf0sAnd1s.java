@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author Justin
  */
-public class SumDigitsInAInteger {
+public class DisplayMatrixOf0sAnd1s {
 
 	/**
 	 * Main method
@@ -21,27 +21,24 @@ public class SumDigitsInAInteger {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
-		System.out.print("Enter any integer: ");
-		long number = input.nextLong();
-
-		System.out.println("The sum of the digits in " + number + " is " + sumDigits(number));
+		System.out.print("Enter n: ");
+		int n = input.nextInt();
+		printMatrix(n);
 
 		input.close();
 	}
 
 	/**
+	 * Print random binary matrix of n by n
 	 *
 	 * @param n
-	 * @return
 	 */
-	public static int sumDigits(long n) {
-		int sum = 0;
-		int temp = 0;
-		while (n != 0) {
-			temp = (int) n % 10;
-			sum += temp;
-			n /= 10;
+	public static void printMatrix(int n) {
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				System.out.print((int) (Math.random() * 2) % 2 + " ");
+			}
+			System.out.println("");
 		}
-		return sum;
 	}
 }
