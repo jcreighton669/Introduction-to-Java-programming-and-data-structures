@@ -38,5 +38,7 @@ public class ComputeCDValue {
 				System.out.printf(i + "\t\t%.2f\n", initialAmount);
 			}
 		}
+		
+		input.close();
 	}
 }

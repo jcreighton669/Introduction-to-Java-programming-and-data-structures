@@ -42,7 +42,7 @@ public class CompareLoansWithVariousInterestRates {
 			System.out.printf("$%.2f", totalPayment);
 			System.out.println();
 		}
-		
+
 		input.close();
 	}
 }

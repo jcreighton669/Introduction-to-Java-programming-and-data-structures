@@ -37,7 +37,7 @@ public class CheckingISBN {
 		}
 
 		System.out.println("ISBN: " + isbn);
-		
+
 		input.close();
 	}
 }

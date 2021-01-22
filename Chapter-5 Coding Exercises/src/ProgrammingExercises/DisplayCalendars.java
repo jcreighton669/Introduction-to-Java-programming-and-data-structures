@@ -106,7 +106,8 @@ public class DisplayCalendars {
 						lastDay += 29;
 					} else {
 						lastDay += 28;
-					}	break;
+					}
+					break;
 			}
 
 			for (int d = 1; d <= lastDay; d++) {
@@ -126,7 +127,7 @@ public class DisplayCalendars {
 			}
 			System.out.println();
 		}
-		
+
 		input.close();
 	}
 }

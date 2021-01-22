@@ -39,7 +39,7 @@ public class OccurrenceOfMaxNumbers {
 
 		System.out.println("The largest number is " + max);
 		System.out.println("The occurrence count of the largest number is " + count);
-		
+
 		input.close();
 	}
 }

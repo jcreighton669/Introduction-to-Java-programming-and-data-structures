@@ -39,5 +39,7 @@ public class LongestCommonPrefix {
 		} else {
 			System.out.println(str1 + " and " + str2 + " have no common prefix");
 		}
+
+		input.close();
 	}
 }

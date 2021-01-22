@@ -115,7 +115,8 @@ public class DisplayTheFirstDaysOfEachMonth {
 						day += 29;
 					} else {
 						day += 28;
-					}	break;
+					}
+					break;
 			}
 		}
 		input.close();

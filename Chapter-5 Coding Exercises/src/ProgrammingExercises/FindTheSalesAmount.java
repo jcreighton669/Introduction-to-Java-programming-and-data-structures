@@ -34,8 +34,7 @@ public class FindTheSalesAmount {
 		}
 
 		System.out.printf("The commission for $%.2f sales is $%.2f\n", salesAmount, commission);
-		{
 
-		}
+		input.close();
 	}
 }

@@ -31,7 +31,7 @@ public class ReverseAString {
 		}
 
 		System.out.println("The reversed string is " + reverse);
-		
+
 		input.close();
 	}
 }

@@ -37,7 +37,7 @@ public class CompoundValue {
 		}
 
 		System.out.println("savings: " + savings);
-		
+
 		input.close();
 	}
 }
