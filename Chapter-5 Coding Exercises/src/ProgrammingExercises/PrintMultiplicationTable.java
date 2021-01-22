@@ -5,8 +5,6 @@
  */
 package ProgrammingExercises;
 
-import java.util.Scanner;
-
 /**
  *
  * @author Justin
@@ -19,20 +17,14 @@ public class PrintMultiplicationTable {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-
-		System.out.print("Enter a string: ");
-		String string = input.nextLine();
-
-		int count = 0;
-		for (int i = 0; i < string.length(); i++) {
-			if (Character.isUpperCase(string.charAt(i))) {
-				count++;
+		int num = 1;
+		while (num < 10) {
+			for (int i = 1; i < 10; i++) {
+				System.out.print(num + "*" + i + "= " + (num * i) + "\t");
 			}
+			System.out.println();
+			num++;
 		}
 
-		System.out.println("Tne number of uppercase letters is " + count);
-		
-		input.close();
 	}
 }
