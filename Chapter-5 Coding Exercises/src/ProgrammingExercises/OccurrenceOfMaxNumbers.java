@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author Justin
  */
-public class CountOccurrenceOfNumbers {
+public class OccurrenceOfMaxNumbers {
 
 	/**
 	 * Main method
@@ -20,25 +20,26 @@ public class CountOccurrenceOfNumbers {
 	 */
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		int[] nums = new int[100];
-		int[] counts = new int[nums.length];
 
-		System.out.print("Enter the integers between 1 and 50: ");
-		for (int i = 0; i < nums.length; i++) {
-			int num = input.nextInt();
-			while (num != 0) {
-				nums[i] = num;
+		System.out.print("Enter numbers: ");
+		int max = input.nextInt();
+		int count = 1;
+		int number = -1;
+
+		while (number != 0) {
+			number = input.nextInt();
+			if (number > max) {
+				max = number;
+				count = 1;
+			}
+			if (number == max) {
+				count++;
 			}
 		}
 
-		compareIntegers(nums);
-
+		System.out.println("The largest number is " + max);
+		System.out.println("The occurrence count of the largest number is " + count);
+		
 		input.close();
-	}
-
-	public static void compareIntegers(int[] array) {
-		for (int i = 0; i < array.length; i++) {
-
-		}
 	}
 }

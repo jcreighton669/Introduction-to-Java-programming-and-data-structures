@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author Justin
  */
-public class CountOccurrenceOfNumbers {
+public class BitLevelOperations {
 
 	/**
 	 * Main method
@@ -20,25 +20,19 @@ public class CountOccurrenceOfNumbers {
 	 */
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		int[] nums = new int[100];
-		int[] counts = new int[nums.length];
 
-		System.out.print("Enter the integers between 1 and 50: ");
-		for (int i = 0; i < nums.length; i++) {
-			int num = input.nextInt();
-			while (num != 0) {
-				nums[i] = num;
-			}
+		System.out.print("Enter an integer: ");
+		short number = input.nextShort();
+		short temp = number;
+		String bits = "";
+
+		for (int i = 0; i < 8; i++) {
+			bits = (number % 2) + bits;
+			number >>= 1;
 		}
 
-		compareIntegers(nums);
-
+		System.out.println("Binary for " + temp + " is " + bits);
+		
 		input.close();
-	}
-
-	public static void compareIntegers(int[] array) {
-		for (int i = 0; i < array.length; i++) {
-
-		}
 	}
 }

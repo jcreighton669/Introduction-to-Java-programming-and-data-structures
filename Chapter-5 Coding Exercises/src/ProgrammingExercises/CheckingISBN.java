@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author Justin
  */
-public class CountOccurrenceOfNumbers {
+public class CheckingISBN {
 
 	/**
 	 * Main method
@@ -20,25 +20,24 @@ public class CountOccurrenceOfNumbers {
 	 */
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		int[] nums = new int[100];
-		int[] counts = new int[nums.length];
+		int sum = 0;
+		String isbn = "";
 
-		System.out.print("Enter the integers between 1 and 50: ");
-		for (int i = 0; i < nums.length; i++) {
-			int num = input.nextInt();
-			while (num != 0) {
-				nums[i] = num;
-			}
+		for (int i = 0; i < 9; i++) {
+			System.out.print("Enter a single-digit of the ISBN: ");
+			int digit = input.nextInt();
+			sum += digit;
+			isbn += Integer.toString(digit);
 		}
 
-		compareIntegers(nums);
+		if (sum % 11 == 10) {
+			isbn += "X";
+		} else {
+			isbn += String.valueOf(sum % 11);
+		}
 
+		System.out.println("ISBN: " + isbn);
+		
 		input.close();
-	}
-
-	public static void compareIntegers(int[] array) {
-		for (int i = 0; i < array.length; i++) {
-
-		}
 	}
 }
