@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author Justin
  */
-public class CountTheLettersInAString {
+public class AreaOfAPentagon {
 
 	/**
 	 * Main method
@@ -21,28 +21,23 @@ public class CountTheLettersInAString {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
-		System.out.print("Enter a string: ");
-		String s = input.nextLine();
+		System.out.print("Enter the side: ");
+		double side = input.nextDouble();
 
-		System.out.println("There are " + countLetters(s) + " letters in \n\"" + s + "\"");
-
+		System.out.println("The area of the pentagon is " + area(side));
+		
 		input.close();
 	}
 
 	/**
-	 * Count the letters in a string of text
+	 * Get the area of regular pentagon
 	 *
-	 * @param s
+	 * @param side
 	 * @return
 	 */
-	public static int countLetters(String s) {
-		int count = 0;
-		for (int i = 0; i < s.length(); i++) {
-			char ch = s.charAt(i);
-			if (Character.isLetter(ch)) {
-				count++;
-			}
-		}
-		return count;
+	public static double area(double side) {
+		double area = (5 * side * side) / (4 * (Math.tan(Math.PI / 5)));
+
+		return area;
 	}
 }

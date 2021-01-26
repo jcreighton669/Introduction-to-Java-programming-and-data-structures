@@ -30,6 +30,8 @@ public class OccurrencesOfASpecifiedCharacter {
 		int count = count(text, ch);
 
 		System.out.println("The charcter " + ch + " appears " + count + " in \n\"" + text + "\"");
+
+		input.close();
 	}
 
 	/**

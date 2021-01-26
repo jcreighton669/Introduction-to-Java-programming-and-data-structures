@@ -13,11 +13,12 @@ public class EstimatePI {
 
 	/**
 	 * Main method
-	 * @param args 
+	 *
+	 * @param args
 	 */
 	public static void main(String[] args) {
 		double start = 1;
-		double end   = 100001;
+		double end = 100001;
 		System.out.println("\ni           m(i)     ");
 		System.out.println("---------------------");
 		for (double i = start; i <= end; i += 100) {
@@ -28,8 +29,9 @@ public class EstimatePI {
 
 	/**
 	 * Method to estimate pi
+	 *
 	 * @param n
-	 * @return 
+	 * @return
 	 */
 	public static double estimatePI(double n) {
 		double pi = 0;

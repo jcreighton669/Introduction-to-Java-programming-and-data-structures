@@ -34,7 +34,7 @@ public class PhoneKeypads {
 			}
 		}
 		System.out.println("");
-		
+
 		input.close();
 	}
 
