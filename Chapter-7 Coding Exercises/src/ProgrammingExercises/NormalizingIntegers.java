@@ -5,10 +5,22 @@
  */
 package ProgrammingExercises;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Justin
  */
 public class NormalizingIntegers {
-	
+
+	/**
+	 * Main method
+	 *
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		System.out.print("Enter the  ");
+	}
 }
