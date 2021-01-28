@@ -17,13 +17,13 @@ public class ComputingLCM {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		System.out.println(lcm(25, 50, 125, 35));
+		System.out.println(lcm(25, 35));
 	}
 
 	/**
-	 * 
+	 *
 	 * @param numbers
-	 * @return 
+	 * @return
 	 */
 	public static int lcm(int... numbers) {
 		int min;
