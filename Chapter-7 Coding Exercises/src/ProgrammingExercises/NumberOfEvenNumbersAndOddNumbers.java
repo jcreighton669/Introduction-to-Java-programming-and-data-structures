@@ -36,10 +36,16 @@ public class NumberOfEvenNumbersAndOddNumbers {
 
 		System.out.println("The number of odd numbers: " + odds);
 		System.out.println("The number of even numbers: " + evens);
-		
+
 		input.close();
 	}
 
+	/**
+	 * Check if number is even
+	 *
+	 * @param num
+	 * @return
+	 */
 	public static boolean isEven(int num) {
 		return num % 2 == 0;
 	}

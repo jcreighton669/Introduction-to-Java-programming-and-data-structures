@@ -21,12 +21,12 @@ public class ComputeDeviation {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		double[] elements = new double[10];
-		
+
 		System.out.print("Enter 10 numbers: ");
 		for (int i = 0; i < 10; i++) {
 			elements[i] = input.nextDouble();
 		}
-		
+
 		System.out.println("The mean is " + mean(elements));
 		System.out.println("The standard deviation is " + deviation(elements));
 		input.close();
@@ -41,11 +41,11 @@ public class ComputeDeviation {
 	public static double deviation(double[] x) {
 		double arrayMean = mean(x);
 		double stdDev = 0;
-		
+
 		for (int i = 0; i < x.length; i++) {
 			stdDev += (Math.pow(x[i] - arrayMean, 2));
 		}
-		
+
 		stdDev /= (x.length - 1);
 		stdDev = Math.sqrt(stdDev);
 		return stdDev;
