@@ -1,15 +1,3 @@
-/** **************************
- *         StopWatch         *
- *---------------------------*
- * -startTime: long          *
- * -endTime: long            *
- * +StopWatch()              *
- * +start()                  *
- * +stop()                   *
- * +getElapsedTime(): long   *
- * +getStratTime(): long     *
- * +getEndTime(): long       *
- *************************** */
 package ProgrammingExercises;
 
 /**
