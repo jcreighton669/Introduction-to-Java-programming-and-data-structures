@@ -25,6 +25,8 @@ public class AverageMajorDiagonal {
 			}
 		}
 		System.out.println("Average of the elements in the major diagonal is " + averageMajorDiagonal(m));
+
+		input.close();
 	}
 
 	/**

@@ -32,6 +32,8 @@ public class ComputeWeeklyHoursForEachEmployee {
 		for (int i = 0; i < hours.length; i++) {
 			System.out.println("Employee " + i + " worked an average of " + averageRow(hours, i));
 		}
+
+		input.close();
 	}
 
 	/**

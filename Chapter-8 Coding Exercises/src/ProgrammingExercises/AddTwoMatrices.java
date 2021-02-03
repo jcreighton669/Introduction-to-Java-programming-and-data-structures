@@ -39,6 +39,7 @@ public class AddTwoMatrices {
 
 		print(first, second, sum);
 
+		input.close();
 	}
 
 	public static double[][] sumMatrices(double[][] first, double[][] second) {
