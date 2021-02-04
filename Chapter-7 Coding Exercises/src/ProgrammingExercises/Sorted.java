@@ -32,6 +32,8 @@ public class Sorted {
 		} else {
 			System.out.println("The list is not sorted");
 		}
+
+		input.close();
 	}
 
 	public static boolean isSorted(int[] nums) {
